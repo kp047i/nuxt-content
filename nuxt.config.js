@@ -41,6 +41,13 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxt/content'],
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
   /*
    ** Build configuration
    */
