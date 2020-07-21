@@ -15,3 +15,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.nuxt-content h1 {
+  font-size: 20px;
+}
+</style>
