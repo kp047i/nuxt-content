@@ -62,3 +62,25 @@ nuxt-contentのdocumentにバインドすることで記事が表示される
 ``` html
 <nuxt-content :document="article" />
 ```
+
+## コードにシンタックスハイライトを追加する
+
+prismJSのライブラリをインストールする
+
+``` bash
+yarn add prism-themes
+```
+
+テーマを[prism-themes](https://github.com/PrismJS/prism-themes)から選択する
+
+nuxt.config.jsにテーマを選択する
+
+``` js{}[nuxt.config.js]
+content: {
+  markdown: {
+    prism: {
+      theme: 'prism-themes/themes/prism-material-oceanic.css'
+    }
+  }
+}
+```
